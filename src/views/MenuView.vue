@@ -6,7 +6,7 @@ const foods = ref([])
 const cartStore = useCartStore()
 
 const fetchFoods = async () => {
-  const res = await fetch('http://localhost:3000/foods')
+  const res = await fetch('http://localhost:3001/foods')
   const data = await res.json()
   foods.value = data
 }
