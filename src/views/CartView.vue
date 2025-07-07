@@ -60,7 +60,7 @@ const total = computed(() => {
 async function checkout() {
   isLoading.value = true
   try {
-    const res = await fetch('http://localhost:3000/orders', {
+    const res = await fetch('https://mock-api-production-3615.up.railway.app/orders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(cart.value)
